@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <title>Wordle - by Jvictor</title>
+
+    <link href="https://www.nytimes.com/games-assets/v2/assets/wordle/wordle_logo_32x32.png" rel="icon shortcut"
+        sizes="3232">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="header" >
+        <div class="Three-lines" >
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="title" >
+            <div class="Name">Wordle</div>
+            <div class="MyName">By: Jvictor</div>
+        </div>
+        <div></div>
+    </header>
+    <section>
+        <div class="options">
+            div.
+        </div>
+        <div class="container-center" >
+            <div class="board">
+                <div class="row-item">
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                </div>
+                <div class="row-item">
+                    <div class="board-item" id='teste' ></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                </div>
+                <div class="row-item">
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                </div>
+                <div class="row-item">
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                </div>
+                <div class="row-item">
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                </div>
+                <div class="row-item">
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                    <div class="board-item"></div>
+                </div>
+            </div>
+            <div class="keyboard">
+                <div class="Row-keys-first">
+                    <button type="button" class="keys">Q</button>
+                    <button type="button" class="keys">W</button>
+                    <button type="button" class="keys">E</button>
+                    <button type="button" class="keys">R</button>
+                    <button type="button" class="keys">T</button>
+                    <button type="button" class="keys">Y</button>
+                    <button type="button" class="keys">U</button>
+                    <button type="button" class="keys">I</button>
+                    <button type="button" class="keys">O</button>
+                    <button type="button" class="keys">P</button>
+                </div>
+                <div class="Row-keys-second">
+                    <button type="button" class="keys">A</button>
+                    <button type="button" class="keys">S</button>
+                    <button type="button" class="keys">D</button>
+                    <button type="button" class="keys">F</button>
+                    <button type="button" class="keys">G</button>
+                    <button type="button" class="keys">H</button>
+                    <button type="button" class="keys">J</button>
+                    <button type="button" class="keys">K</button>
+                    <button type="button" class="keys">L</button>
+                </div>
+                <div class="Row-keys-third">
+                    <button type="button" title="Enter" id="enter" class="buttonKeyboard">ENTER</button>
+                    <button type="button" class="keys">Z</button>
+                    <button type="button" class="keys">X</button>
+                    <button type="button" class="keys">C</button>
+                    <button type="button" class="keys">V</button>
+                    <button type="button" class="keys">B</button>
+                    <button type="button" class="keys">N</button>
+                    <button type="button" class="keys">M</button>
+                    <button type="button" title="Apagar" id="remover" class="buttonKeyboard">Apagar
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-2 -5 24 24">
+                            <path fill="white"
+                                d="M7.828 0H18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7.828a2 2 0 0 1-1.414-.586L.707 7.707a1 1 0 0 1 0-1.414L6.414.586A2 2 0 0 1 7.828 0zm0 12H18V2H7.828l-5 5l5 5zm6.586-5l1.414 1.414a1 1 0 0 1-1.414 1.414L13 8.414l-1.414 1.414a1 1 0 1 1-1.414-1.414L11.586 7l-1.414-1.414a1 1 0 1 1 1.414-1.414L13 5.586l1.414-1.414a1 1 0 1 1 1.414 1.414L14.414 7z" />
+                        </svg> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
