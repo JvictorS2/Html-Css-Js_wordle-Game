@@ -136,11 +136,6 @@ const Remove = () => {
 }
 
 
-
-
-
-
-
 /* buttons */
 // Submit 
 
@@ -235,7 +230,6 @@ document.addEventListener('keyup',
             console.log(`A tecla ${key} não é permitida`)
         }
     })
-
 
 //Remover
 

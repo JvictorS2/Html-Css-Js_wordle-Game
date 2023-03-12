@@ -56,7 +56,7 @@ const haDuplicado = (arr) => {
 console.log(haDuplicado(array));
  */
 
-let teste = "333";
+/* let teste = "333";
 let oi = /[a-z]/ig;
 
 
@@ -67,4 +67,4 @@ if (teste.match(oi) != null) {
     console.log('tem as letras')
 } else {
     console.log('não tem as letras')
-}
+} */
