@@ -237,6 +237,15 @@ document.addEventListener('keyup',
 remover.addEventListener('click', Remove);
 
 
+let buttonX = document.getElementById('buttonX')
+let optionsTransition = document.getElementById('OptionsTransition');
+
+buttonX.addEventListener('click', () => {
+    buttonX.classList.toggle('ClickOn');
+    optionsTransition.classList.toggle('optionsShow')
+})
+
+
 
 
 

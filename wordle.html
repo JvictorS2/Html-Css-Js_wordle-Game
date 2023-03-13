@@ -18,10 +18,11 @@
         sizes="3232">
     <link rel="stylesheet" href="./assets/css/MainStyle.css">
 </head>
+
 <body>
-    <section class="section-main" >
+    <div class="section-main" >
         <header class="header">
-            <div class="Three-lines">
+            <div id="buttonX" class="Three-lines">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -34,12 +35,64 @@
         </header>
 
         <section class="content-main" >
-            <!-- <div class="options">
+            <div id="OptionsTransition" class="options OptionsShow">
+                <div class="Options-box-main">
+                    <h1>Conheça o Wordle</h1>
+                    <hr>
+                    <div>
+                        <div>
+                            <img height="40" src="https://www.nytimes.com/games-assets/v2/assets/wordle/wordle_logo_32x32.png" alt="Wordle-icon">
+                            <p>
+                                <a href="https://www.nytimes.com/games/wordle/index.html">Site oficial do Wordle</a>
+                            </p>
+                        </div>
+                        <svg class="linkOut" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256">
+                            <path 
+                                d="M224 104a8 8 0 0 1-16 0V59.32l-66.33 66.34a8 8 0 0 1-11.32-11.32L196.68 48H152a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8Zm-40 24a8 8 0 0 0-8 8v72H48V80h72a8 8 0 0 0 0-16H48a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-72a8 8 0 0 0-8-8Z" />
+                        </svg>
+                    </div>
                     
-                </div> -->
-                <div class="warning">
-                    Você ainda não completou seu palpite
+                    <h2>Social</h2>
+                    <hr>
+                    <div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472 488">
+                                <path fill="white"
+                                    d="M434 5H41q-14 0-24 9.5T7 38v394q0 14 10 24t24 10h393q14 0 24-10t10-24V38q0-14-10-23.5T434 5zM147 390H77V182h70v208zm-35-236q-18 0-28.5-10.5T73 118t11-25.5T112 82q18 0 28.5 10.5T151 118t-10.5 25.5T112 154zm286 236h-70V279q0-47-35-47q-26 0-36 25q-2 5-2 17v116h-70q1-188 0-208h70v30q23-35 63-35q36 0 58 24t22 70v119zM255 213v-1v1z" />
+                            </svg>
+                            <span>
+                                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-sim%C3%B5es-57366323a/">Meu Linkedin (Jvictor)</a>
+                            </span>
+                        </div>
+                        <svg class="linkOut" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256">
+                            <path 
+                                d="M224 104a8 8 0 0 1-16 0V59.32l-66.33 66.34a8 8 0 0 1-11.32-11.32L196.68 48H152a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8Zm-40 24a8 8 0 0 0-8 8v72H48V80h72a8 8 0 0 0 0-16H48a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-72a8 8 0 0 0-8-8Z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                            </svg>
+                            <span>
+                                <a href="https://github.com/JvictorS2">Meu gitHub (Jvictor)</a>
+                            </span>
+                        </div>
+                        <svg class="linkOut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <path
+                                d="M224 104a8 8 0 0 1-16 0V59.32l-66.33 66.34a8 8 0 0 1-11.32-11.32L196.68 48H152a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8Zm-40 24a8 8 0 0 0-8 8v72H48V80h72a8 8 0 0 0 0-16H48a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-72a8 8 0 0 0-8-8Z" />
+                        </svg>
+                    </div>
+                    <hr>
                 </div>
+            </div>
+
+            <div class="warning">
+                    Você ainda não completou seu palpite
+            </div>
+
             <div class="container-center">
                 <div class="board">
                     <div class="row-item">
@@ -85,6 +138,7 @@
                         <div class="board-item"></div>
                     </div>
                 </div>
+
                 <div class="keyboard">
                     <div class="Row-keys-first">
                         <button type="button" class="keys">Q</button>
@@ -109,9 +163,13 @@
                         <button type="button" class="keys">K</button>
                         <button type="button" class="keys">L</button>
                     </div>
-                    
                     <div class="Row-keys-third">
-                        <button type="button" title="Enter" id="enter" class="buttonKeyboardEnter">ENTER</button>
+                        <button type="button" title="Enter" id="enter" class="buttonKeyboardEnter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="white"
+                                    d="M21 4a1 1 0 0 1 .993.883L22 5v6.5a3.5 3.5 0 0 1-3.308 3.495L18.5 15H5.415l3.292 3.293a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.083l-.094-.083l-5-5a1.011 1.011 0 0 1-.097-.112l-.071-.11l-.054-.114l-.035-.105l-.025-.117l-.007-.06L2 14l.003-.075l.017-.126l.03-.111l.044-.111l.052-.098l.064-.092l.083-.094l5-5a1 1 0 0 1 1.497 1.32l-.083.094L5.415 13H18.5a1.5 1.5 0 0 0 1.493-1.355L20 11.5V5a1 1 0 0 1 1-1Z" />
+                            </svg>
+                        </button>
                         <button type="button" class="keys">Z</button>
                         <button type="button" class="keys">X</button>
                         <button type="button" class="keys">C</button>
@@ -119,13 +177,17 @@
                         <button type="button" class="keys">B</button>
                         <button type="button" class="keys">N</button>
                         <button type="button" class="keys">M</button>
-                        <button type="button" title="Apagar" id="remover" class="buttonKeyboardRemove">Apagar</button>
-                    </div> 
-                    
+                        <button type="button" title="Apagar" id="remover" class="buttonKeyboardRemove">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+                                <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M18.424 10.538A2 2 0 0 1 19.788 10H42a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H19.788a2 2 0 0 1-1.364-.538L4 24l14.424-13.462ZM36 19L26 29m0-10l10 10" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
-    </section>
+    </div>
     <script src="./assets/script/script.js"></script>
 </body>
 </html>

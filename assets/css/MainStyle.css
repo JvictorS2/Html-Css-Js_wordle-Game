@@ -7,7 +7,7 @@
 }
 
 body{
-   overflow: hidden; 
+    background-color: #13161c ;
 }
 
 /* Colors and thema */
@@ -22,20 +22,20 @@ button.buttonKeyboardEnter{
     font-weight: bold;
 }
 
-section.section-main{
+div.section-main{
     width: 100vw;
     height: 100vh;
 }
 
 /* Header */
 header.header,
-section{
+section.content-main{
     background-color: #13161c;
     width: 100%;
 }
 
 header.header{
-    height: 4rem;
+    height: 64px;
     border-bottom: 1px solid #3f3d3d;
     display: flex;
     justify-content: space-between;
@@ -44,10 +44,15 @@ header.header{
 
 /* Three lines */
 div.Three-lines{
+    height: 20px;
+    width: 20px;
+
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    margin-left: 16px;
+
     cursor: pointer;
+    position: relative;
 }
 
 div.line1,
@@ -55,16 +60,42 @@ div.line2,
 div.line3{
     width: 20px;
     height: 3px;
-    background-color: #fff;
+
     border-radius: 3px;
+    position: absolute;
+
+    background-color: #fff;
+    transition: transform 1000ms, opacity 1000ms ;
 }
 
 div.line1{
-    transform: translateY(-4px);
+    top: 2px;
+}
+
+div.line2{
+   top: 8px;
 }
 
 div.line3{
-    transform: translateY(4px);
+   top: 14px;
+}
+
+
+
+div.ClickOn div.line1{
+    top:9px;
+    transform: rotate(135deg)
+}
+
+div.ClickOn div.line2{
+    opacity: 0;
+
+    transition: opacity 0s;
+}
+
+div.ClickOn div.line3{
+    top: 9px;
+    transform: rotate(225deg)
 }
 
 /* Title */
@@ -84,19 +115,75 @@ div.MyName{
 }
 
 /* Main content */
-section{
-    height: 100%;
+section.content-main{
+    height: calc(100% - 64px);
     position: relative;
 }
 
+/* Options */
+
 div.options{
-    position: absolute;
-    width: 220px;
-    height: 350px;
+    width: 100%;
+    height: 0px;
+
+    top: 0;
+    left: 0;
     
+
+    position: absolute;
+
     background-color: #212121;
-    border-radius: 0px 0px 10px 0px;
+    color: #fff;
+    
+    transition:  1000ms;
+    overflow: hidden;
 }
+
+div.options div.Options-box-main{
+    padding: 16px;
+}
+
+div.options div.Options-box-main hr{
+    border: .5px solid #c2c2c2;
+    margin: 8px 0;
+}
+
+div.options div.Options-box-main h2{
+    margin-top: 16px;
+}
+
+div.options div.Options-box-main div{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 6px 0;
+}
+
+div.options div.Options-box-main svg{
+    fill: #fff;
+    height: 40px ;
+}
+
+div.options div.Options-box-main a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 16px;
+}
+
+div.options div.Options-box-main svg.linkOut{
+    height: 30px;
+}
+
+/* Animation */
+
+div.optionsShow{
+    width: 100%;
+    height: 100%;
+   overflow: scroll;
+
+
+}
+
 
 div.container-center{
     display: flex;
@@ -123,7 +210,7 @@ div.warning{
     font-weight: normal;
     font-size: 14px;
 
-    opacity: 0;
+    opacity: 1;
 }
 
 /* Board */
@@ -191,8 +278,6 @@ div.Row-keys-second{
 }
 
 div.Row-keys-third{
-    padding: 0 8.05px;
-
     display: grid;
     grid-template-columns: repeat(9,1fr);
 
@@ -216,6 +301,11 @@ button.keys{
 
 button.buttonKeyboardRemove,
 button.buttonKeyboardEnter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40.05px;
     height: 58px;
     margin: 2px 2px ;
 }
@@ -229,13 +319,13 @@ button.buttonKeyboardRemove{
     border: none;
 }
 
-button.keys:hover,
+/* button.keys:hover,
 button.buttonKeyboardEnter:hover,
 button.buttonKeyboardRemove:hover{
     background-color: purple;
     box-shadow: 0 0 20px purple;
     transition: 500ms;
-}
+} */
 
 
 
