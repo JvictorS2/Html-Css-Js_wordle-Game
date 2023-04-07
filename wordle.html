@@ -17,9 +17,11 @@
     <link href="https://www.nytimes.com/games-assets/v2/assets/wordle/wordle_logo_32x32.png" rel="icon shortcut"
         sizes="3232">
     <link rel="stylesheet" href="./assets/css/MainStyle.css">
+    <link rel="stylesheet" href="./assets/css/Colors.css">
 </head>
 
-<body>
+<body class="dark" >
+    <!-- header -->
     <div class="section-main" >
         <header class="header">
             <div id="buttonX" class="Three-lines">
@@ -35,16 +37,17 @@
         </header>
 
         <section class="content-main" >
-            <div id="OptionsTransition" class="options OptionsShow">
+            <!-- side bar content -->
+            <div id="OptionsTransition" class="options">
                 <div class="Options-box-main">
-                    <h1>Conheça o Wordle</h1>
+                    <h1>Meet Wordle</h1>
                     <hr>
-                    <div>
-                        <div>
+                    <div  class="options-boxs" >
+                        <div class="options-boxs-content" >
                             <img height="40" src="https://www.nytimes.com/games-assets/v2/assets/wordle/wordle_logo_32x32.png" alt="Wordle-icon">
-                            <p>
-                                <a href="https://www.nytimes.com/games/wordle/index.html">Site oficial do Wordle</a>
-                            </p>
+                            <span>
+                                <a href="https://www.nytimes.com/games/wordle/index.html">Wordle official website</a>
+                            </span>
                         </div>
                         <svg class="linkOut" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256">
                             <path 
@@ -52,16 +55,16 @@
                         </svg>
                     </div>
                     
-                    <h2>Social</h2>
+                    <h3>Social</h3>
                     <hr>
-                    <div>
-                        <div>
+                    <div class="options-boxs" >
+                        <div class="options-boxs-content" >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472 488">
-                                <path fill="white"
+                                <path 
                                     d="M434 5H41q-14 0-24 9.5T7 38v394q0 14 10 24t24 10h393q14 0 24-10t10-24V38q0-14-10-23.5T434 5zM147 390H77V182h70v208zm-35-236q-18 0-28.5-10.5T73 118t11-25.5T112 82q18 0 28.5 10.5T151 118t-10.5 25.5T112 154zm286 236h-70V279q0-47-35-47q-26 0-36 25q-2 5-2 17v116h-70q1-188 0-208h70v30q23-35 63-35q36 0 58 24t22 70v119zM255 213v-1v1z" />
                             </svg>
                             <span>
-                                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-sim%C3%B5es-57366323a/">Meu Linkedin (Jvictor)</a>
+                                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-sim%C3%B5es-57366323a/">My Linkedin (Jvictor)</a>
                             </span>
                         </div>
                         <svg class="linkOut" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256">
@@ -70,14 +73,14 @@
                         </svg>
                     </div>
 
-                    <div>
-                        <div>
+                    <div  class="options-boxs" >
+                        <div class="options-boxs-content" >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                     d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
                             </svg>
                             <span>
-                                <a href="https://github.com/JvictorS2">Meu gitHub (Jvictor)</a>
+                                <a href="https://github.com/JvictorS2">My gitHub (Jvictor)</a>
                             </span>
                         </div>
                         <svg class="linkOut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -85,15 +88,152 @@
                                 d="M224 104a8 8 0 0 1-16 0V59.32l-66.33 66.34a8 8 0 0 1-11.32-11.32L196.68 48H152a8 8 0 0 1 0-16h64a8 8 0 0 1 8 8Zm-40 24a8 8 0 0 0-8 8v72H48V80h72a8 8 0 0 0 0-16H48a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-72a8 8 0 0 0-8-8Z" />
                         </svg>
                     </div>
+
+                    <!----------------- Dark Mode ------------------>
+                    <h3>Dark mode</h3>
                     <hr>
+                    <div class="options-boxs ">
+                        <div class="options-boxs-content">
+                            <div class="sun-moon-text sunOut">
+                                <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                    <path fill="currentColor"
+                                        d="M120 40V16a8 8 0 0 1 16 0v24a8 8 0 0 1-16 0Zm72 88a64 64 0 1 1-64-64a64.07 64.07 0 0 1 64 64Zm-16 0a48 48 0 1 0-48 48a48.05 48.05 0 0 0 48-48ZM58.34 69.66a8 8 0 0 0 11.32-11.32l-16-16a8 8 0 0 0-11.32 11.32Zm0 116.68l-16 16a8 8 0 0 0 11.32 11.32l16-16a8 8 0 0 0-11.32-11.32ZM192 72a8 8 0 0 0 5.66-2.34l16-16a8 8 0 0 0-11.32-11.32l-16 16A8 8 0 0 0 192 72Zm5.66 114.34a8 8 0 0 0-11.32 11.32l16 16a8 8 0 0 0 11.32-11.32ZM48 128a8 8 0 0 0-8-8H16a8 8 0 0 0 0 16h24a8 8 0 0 0 8-8Zm80 80a8 8 0 0 0-8 8v24a8 8 0 0 0 16 0v-24a8 8 0 0 0-8-8Zm112-88h-24a8 8 0 0 0 0 16h24a8 8 0 0 0 0-16Z" />
+                                </svg>
+                                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                    <path fill="currentColor"
+                                        d="M236.37 139.4a12 12 0 0 0-12-3A84.07 84.07 0 0 1 119.6 31.59a12 12 0 0 0-15-15a108.86 108.86 0 0 0-54.91 38.48A108 108 0 0 0 136 228a107.09 107.09 0 0 0 64.93-21.69a108.86 108.86 0 0 0 38.44-54.94a12 12 0 0 0-3-11.97Zm-49.88 47.74A84 84 0 0 1 68.86 69.51a84.93 84.93 0 0 1 23.41-21.22Q92 52.13 92 56a108.12 108.12 0 0 0 108 108q3.87 0 7.71-.27a84.79 84.79 0 0 1-21.22 23.41Z" />
+                                </svg>
+                            </div>
+                            <span class="span-darkmode" >
+                                Dark mode (dark)
+                            </span>
+                        </div>
+                        <div class="checkbox-darkMode-box" >
+                            <input class="checkbox-darkMode" type="checkbox" id="checkbox-darkMode"  title="darkMode" checked >
+                            <label class="label-darkMode" for="checkbox-darkMode">
+                                <div class="ball" ></div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <!--------------- Colors --------------------->
+                    <h3>Colors</h3>
+                    <hr>
+                    <div id="ColorSection">
+                        <div class="Colors-container clickOn">
+                            <div class="options-boxs">
+                                <div class="options-boxs-content">
+                                    <div class="ColorChoosed"></div>
+                                    <span>Letter in correct position</span>
+                                </div>
+                                <div>
+                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="colors-box">
+                                <hr>
+                                <div class="colors-board">
+                                    <div class="BlueGreen"></div>
+                                    <div class="BrightGreen" ></div>
+                                    <div class="BrightBlue"></div>
+                                    <div class="Blue"></div>
+                                    <div class="DarkBlue"></div>
+                                    <div class="Orange"></div>
+                                    <div class="DarkPurple"></div>
+                                    <div class="Purple"></div>
+                                    <div class="Magenta"></div>
+                                    <div class="Teal"></div>
+                                    <div class="Gray"></div>
+                                    <div class="Brown"></div>
+                                    <div class="Green"></div>
+                                    <div class="Yellow"></div>
+                                    <div class="Black"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="Colors-container ">
+                            <div class="options-boxs">
+                                <div class="options-boxs-content">
+                                    <div class="ColorChoosed"></div>
+                                    <span>Letter belongs to the word</span>
+                                </div>
+                                <div>
+                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="colors-box ">
+                                <hr>
+                                <div class="colors-board">
+                                    <div class="BlueGreen"></div>
+                                    <div class="BrightGreen"></div>
+                                    <div class="BrightBlue"></div>
+                                    <div class="Blue"></div>
+                                    <div class="DarkBlue"></div>
+                                    <div class="Orange"></div>
+                                    <div class="DarkPurple"></div>
+                                    <div class="Purple"></div>
+                                    <div class="Magenta"></div>
+                                    <div class="Teal"></div>
+                                    <div class="Gray"></div>
+                                    <div class="Brown"></div>
+                                    <div class="Green"></div>
+                                    <div class="Yellow"></div>
+                                    <div class="Black"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="Colors-container ">
+                            <div class="options-boxs">
+                                <div class="options-boxs-content">
+                                    <div class="ColorChoosed"></div>
+                                    <span>Letter does not belong to the word</span>
+                                </div>
+                                <div>
+                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 14.975q-.2 0-.387-.075q-.188-.075-.313-.2l-4.6-4.6q-.275-.275-.275-.7q0-.425.275-.7q.275-.275.7-.275q.425 0 .7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275q.425 0 .7.275q.275.275.275.7q0 .425-.275.7l-4.6 4.6q-.15.15-.325.212q-.175.063-.375.063Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="colors-box">
+                                <hr>
+                                <div class="colors-board">
+                                    <div class="BlueGreen"></div>
+                                    <div class="BrightGreen"></div>
+                                    <div class="BrightBlue"></div>
+                                    <div class="Blue"></div>
+                                    <div class="DarkBlue"></div>
+                                    <div class="Orange"></div>
+                                    <div class="DarkPurple"></div>
+                                    <div class="Purple"></div>
+                                    <div class="Magenta"></div>
+                                    <div class="Teal"></div>
+                                    <div class="Gray"></div>
+                                    <div class="Brown"></div>
+                                    <div class="Green"></div>
+                                    <div class="Yellow"></div>
+                                    <div class="Black"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+           <!--  Menssage warning -->
             <div class="warning">
                     Você ainda não completou seu palpite
             </div>
-
-            <div class="container-center">
+           <!-- Board -->
+            <div class="container-center"  >
                 <div class="board">
                     <div class="row-item">
                         <div class="board-item"></div>
@@ -138,7 +278,7 @@
                         <div class="board-item"></div>
                     </div>
                 </div>
-
+                <!-- keyboard -->
                 <div class="keyboard">
                     <div class="Row-keys-first">
                         <button type="button" class="keys">Q</button>
@@ -166,7 +306,7 @@
                     <div class="Row-keys-third">
                         <button type="button" title="Enter" id="enter" class="buttonKeyboardEnter">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="white"
+                                <path 
                                     d="M21 4a1 1 0 0 1 .993.883L22 5v6.5a3.5 3.5 0 0 1-3.308 3.495L18.5 15H5.415l3.292 3.293a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.083l-.094-.083l-5-5a1.011 1.011 0 0 1-.097-.112l-.071-.11l-.054-.114l-.035-.105l-.025-.117l-.007-.06L2 14l.003-.075l.017-.126l.03-.111l.044-.111l.052-.098l.064-.092l.083-.094l5-5a1 1 0 0 1 1.497 1.32l-.083.094L5.415 13H18.5a1.5 1.5 0 0 0 1.493-1.355L20 11.5V5a1 1 0 0 1 1-1Z" />
                             </svg>
                         </button>
@@ -179,7 +319,7 @@
                         <button type="button" class="keys">M</button>
                         <button type="button" title="Apagar" id="remover" class="buttonKeyboardRemove">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-                                <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                <path  stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
                                     d="M18.424 10.538A2 2 0 0 1 19.788 10H42a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H19.788a2 2 0 0 1-1.364-.538L4 24l14.424-13.462ZM36 19L26 29m0-10l10 10" />
                             </svg>
                         </button>
@@ -188,6 +328,7 @@
             </div>
         </section>
     </div>
-    <script src="./assets/script/script.js"></script>
+    <script src="./assets/Js/WordleGame.js"></script>
+    <script src="./assets/Js/InteractionPage.js"></script>
 </body>
 </html>

@@ -1,24 +1,21 @@
-/* General */
-
+/* ----------------------General------------------------- */
 *{
     margin: 0;
     padding: 0;
     font-family: 'roboto',sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: #13161c ;
+    background-color: #E6E6FA ;
 }
 
-/* Colors and thema */
 div.board-item,
 button.keys,
 button.buttonKeyboard,
 header.header,
-div.warning,
-button.buttonKeyboardRemove,
-button.buttonKeyboardEnter{
-    color: #fff;
+div.warning{
+    color: #000;
     font-weight: bold;
 }
 
@@ -27,11 +24,14 @@ div.section-main{
     height: 100vh;
 }
 
-/* Header */
+
+/*---------------- Header --------------*/
 header.header,
 section.content-main{
-    background-color: #13161c;
+    background-color: #E6E6FA  ;
     width: 100%;
+
+    transition: background 500ms ;
 }
 
 header.header{
@@ -42,7 +42,7 @@ header.header{
     align-items: center;
 }
 
-/* Three lines */
+/* ------------------ Three lines - animation ---------------------------*/
 div.Three-lines{
     height: 20px;
     width: 20px;
@@ -64,8 +64,8 @@ div.line3{
     border-radius: 3px;
     position: absolute;
 
-    background-color: #fff;
-    transition: transform 1000ms, opacity 1000ms ;
+    background-color: #000;
+    transition: transform 500ms, opacity 1000ms ;
 }
 
 div.line1{
@@ -80,25 +80,7 @@ div.line3{
    top: 14px;
 }
 
-
-
-div.ClickOn div.line1{
-    top:9px;
-    transform: rotate(135deg)
-}
-
-div.ClickOn div.line2{
-    opacity: 0;
-
-    transition: opacity 0s;
-}
-
-div.ClickOn div.line3{
-    top: 9px;
-    transform: rotate(225deg)
-}
-
-/* Title */
+/* ----------------------- Title ----------------------*/
 div.title{
     display: flex;
 }
@@ -116,11 +98,11 @@ div.MyName{
 
 /* Main content */
 section.content-main{
-    height: calc(100% - 64px);
+    height: calc(100% - 65px);
     position: relative;
 }
 
-/* Options */
+/* ---------------- Options - Animations ---------------------*/
 
 div.options{
     width: 100%;
@@ -129,61 +111,178 @@ div.options{
     top: 0;
     left: 0;
     
-
     position: absolute;
 
-    background-color: #212121;
-    color: #fff;
+    background-color: #EfEfff;
+    color: #000;
     
-    transition:  1000ms;
+    transition: 500ms;
     overflow: hidden;
 }
 
-div.options div.Options-box-main{
+div.options div.Options-box-main,
+div.options div.darkmode-text{
     padding: 16px;
 }
 
 div.options div.Options-box-main hr{
-    border: .5px solid #c2c2c2;
-    margin: 8px 0;
+    height:0;
+
+    margin: 8px auto;
+    border: 0;
+    border-top: .5px solid #c0bfcf;
 }
 
-div.options div.Options-box-main h2{
-    margin-top: 16px;
+div.options div.Options-box-main h3{
+    margin-top: 24px;
 }
 
-div.options div.Options-box-main div{
+div.options div.Options-box-main div.options-boxs,
+div.options div.Options-box-main div.options-boxs-content,
+div.options div.Options-box-main div.sun-moon-text{
     display: flex;
     align-items: center;
     justify-content:space-between;
+}
+
+div.options div.Options-box-main div.options-boxs,
+div.options div.Options-box-main div.options-boxs-content{
     margin: 6px 0;
 }
 
 div.options div.Options-box-main svg{
-    fill: #fff;
+    fill: #000;/*  */
     height: 40px ;
+}
+div.options div.Options-box-main span.span-darkmode{
+    color: #000;
+}
+
+div.options div.Options-box-main span{
+    margin-left: 16px;
 }
 
 div.options div.Options-box-main a{
     text-decoration: none;
-    color: #fff;
-    margin-left: 16px;
+    color: #000;
 }
 
 div.options div.Options-box-main svg.linkOut{
     height: 30px;
 }
 
-/* Animation */
-
-div.optionsShow{
-    width: 100%;
-    height: 100%;
-   overflow: scroll;
+/*------------------ dark Mode -------------------*/
 
 
+
+
+div.options-boxs div.options-boxs-content div.sunOut svg.sun{
+    display: none;
 }
 
+div.options-boxs div.options-boxs-content div.moonOut svg.moon{
+    display: none;
+}
+
+/* button checkbox */
+input.checkbox-darkMode{
+    opacity: 0;
+    position: absolute;
+}
+
+label.label-darkMode{
+    position: relative;
+    height: 30px;
+    width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+label.label-darkMode div.ball{
+    position: absolute;
+    height: 26px;
+    width: 26px;
+
+    border-radius: 50%;
+    background-color: #f1f1fa;
+
+    left: 2px;
+    top: 2px;
+
+    transform: translateX(0px);
+    transition: transform 200ms linear;
+}
+
+input.checkbox-darkMode:checked + label.label-darkMode div.ball{
+    transform: translateX(30px);
+}
+
+/* ---------------- colors ------------------- */
+
+div.Colors-container{
+    background-color: #E6E6FA;
+    border-radius: 5px ;
+    padding: 0 5px;
+    cursor: pointer;
+
+    transition: background 500ms;
+}
+
+div.ColorChoosed{
+    height: 40px;
+    width: 40px;
+
+    border: 2px solid #3a3a3c;
+    border-radius: 5px;
+
+    margin-right: 16px;
+}
+
+div.colors-board{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 16px;
+
+    padding: 16px;
+}
+
+div.colors-board div{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 5px;
+}
+
+div.colors-box{
+    width: 100%;
+    height: 0px;
+    transition: 500ms;
+
+    overflow: hidden;
+}
+
+div.clickOn div.colors-box{
+    height: auto;
+    transition: 500ms;
+}
+
+svg.arrow{
+    transform: rotate(360deg);
+    transition: 500ms;
+}
+
+div.clickOn svg.arrow{
+    transform: rotate(180deg);
+    transition: 500ms;
+}
+
+/* Content center */
 
 div.container-center{
     display: flex;
@@ -308,30 +407,58 @@ button.buttonKeyboardEnter{
     width: 40.05px;
     height: 58px;
     margin: 2px 2px ;
+
 }
 
 button.keys,
 button.buttonKeyboardEnter,
 button.buttonKeyboardRemove{
-    background-color:#818384;
+    background-color:#DCE1ED;
     border-radius: 5px;
     cursor: pointer;
     border: none;
 }
 
-/* button.keys:hover,
+button.keys:hover,
 button.buttonKeyboardEnter:hover,
 button.buttonKeyboardRemove:hover{
-    background-color: purple;
+    background-color: purple !important;
     box-shadow: 0 0 20px purple;
     transition: 500ms;
-} */
+}
 
+
+/* Animations */
+
+div.ClickOn div.line1{
+    top:9px;
+    transform: rotate(135deg)
+}
+
+div.ClickOn div.line2{
+    opacity: 0;
+
+    transition: opacity 0s;
+}
+
+div.ClickOn div.line3{
+    top: 9px;
+    transform: rotate(225deg)
+}
+
+/* Animation */
+
+div.optionsShow{
+    height: 100%;
+    
+   overflow: scroll !important ;
+}
 
 
 div.Green,
 button.Green{
     background-color: green  ;
+
 }
 
 div.Yellow,

@@ -1,0 +1,114 @@
+body.dark{
+    background-color: #13161c;
+
+    header.header,
+    div.warning,
+    div.board-item,
+    button.keys,
+    button.buttonKeyboard,
+    button.buttonKeyboardRemove,
+    button.buttonKeyboardEnter,
+    div.options,
+    div.options div.Options-box-main a,
+    div.options div.Options-box-main span.span-darkmode{
+        color: #fff;
+    }  
+
+    div.options div.Options-box-main svg,
+    button.buttonKeyboardEnter svg,
+    button.buttonKeyboardRemove svg{
+        fill:#fff;
+    }
+
+    button.buttonKeyboardRemove svg{
+        stroke: #000;
+    }
+
+    header.header,
+    section.content-main,
+    div.Colors-container{
+        background-color: #13161c;
+    }   
+
+    div.line1,
+    div.line2,
+    div.line3,
+    label.label-darkMode{
+        background-color: #fff;
+    }
+
+    div.options,
+    label.label-darkMode div.ball{
+        background-color: #212121;
+    }
+
+
+    button.keys,
+    button.buttonKeyboardEnter,
+    button.buttonKeyboardRemove{
+        background-color:#818384;
+    }
+
+
+}
+
+/*------------------- Colors -------------------*/
+
+$nameColors: BlueGreen Green BrightGreen BrightBlue Blue DarkBlue Orange DarkPurple Purple Magenta Teal Gray Brown Yellow Black;
+$colors: #fff;
+
+
+
+@each $nameColor in $nameColors{
+    @if($nameColor == BlueGreen){
+        $colors: #016240;
+
+    }@else if($nameColor == Green){
+        $colors: green;
+
+    }@else if($nameColor == BrightGreen){
+        $colors: #016246 ;
+
+    }@else if($nameColor == BrightBlue){
+        $colors: #107fc7;
+
+    }@else if($nameColor == Blue){
+        $colors: #1072d5 ;
+
+    }@else if($nameColor == DarkBlue){
+        $colors: #1a4093;
+
+    }@else if($nameColor == Orange){
+        $colors: orangered;
+
+    }@else if($nameColor == DarkPurple){
+        $colors: purple;
+
+    }@else if($nameColor == Purple){
+        $colors: #774eaa ;
+
+    }@else if($nameColor == Magenta){
+        $colors: magenta;
+
+    }@else if($nameColor == Teal){
+        $colors: teal ;
+
+    }@else if($nameColor == Gray){
+        $colors: #687385;
+
+    }@else if($nameColor == Brown){
+        $colors: #725130;
+
+    }@else if($nameColor == Yellow){
+        $colors: #b59f3b ;
+
+    }@else if($nameColor == Black){
+        $colors: blueviolet;
+
+    }
+
+    
+    div.colors-box div.colors-board div.#{$nameColor}{
+        background-color: $colors;
+    }
+}

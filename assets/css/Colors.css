@@ -1,0 +1,111 @@
+body.dark {
+  background-color: #13161c;
+}
+
+body.dark header.header,
+body.dark div.warning,
+body.dark div.board-item,
+body.dark button.keys,
+body.dark button.buttonKeyboard,
+body.dark button.buttonKeyboardRemove,
+body.dark button.buttonKeyboardEnter,
+body.dark div.options,
+body.dark div.options div.Options-box-main a,
+body.dark div.options div.Options-box-main span.span-darkmode {
+  color: #fff;
+}
+
+body.dark div.options div.Options-box-main svg,
+body.dark button.buttonKeyboardEnter svg,
+body.dark button.buttonKeyboardRemove svg {
+  fill: #fff;
+}
+
+body.dark button.buttonKeyboardRemove svg {
+  stroke: #000;
+}
+
+body.dark header.header,
+body.dark section.content-main,
+body.dark div.Colors-container {
+  background-color: #13161c;
+}
+
+body.dark div.line1,
+body.dark div.line2,
+body.dark div.line3,
+body.dark label.label-darkMode {
+  background-color: #fff;
+}
+
+body.dark div.options,
+body.dark label.label-darkMode div.ball {
+  background-color: #212121;
+}
+
+body.dark button.keys,
+body.dark button.buttonKeyboardEnter,
+body.dark button.buttonKeyboardRemove {
+  background-color: #818384;
+}
+
+/*------------------- Colors -------------------*/
+div.colors-box div.colors-board div.BlueGreen {
+  background-color: #016240;
+}
+
+div.colors-box div.colors-board div.Green {
+  background-color: green;
+}
+
+div.colors-box div.colors-board div.BrightGreen {
+  background-color: #016246;
+}
+
+div.colors-box div.colors-board div.BrightBlue {
+  background-color: #107fc7;
+}
+
+div.colors-box div.colors-board div.Blue {
+  background-color: #1072d5;
+}
+
+div.colors-box div.colors-board div.DarkBlue {
+  background-color: #1a4093;
+}
+
+div.colors-box div.colors-board div.Orange {
+  background-color: orangered;
+}
+
+div.colors-box div.colors-board div.DarkPurple {
+  background-color: purple;
+}
+
+div.colors-box div.colors-board div.Purple {
+  background-color: #774eaa;
+}
+
+div.colors-box div.colors-board div.Magenta {
+  background-color: magenta;
+}
+
+div.colors-box div.colors-board div.Teal {
+  background-color: teal;
+}
+
+div.colors-box div.colors-board div.Gray {
+  background-color: #687385;
+}
+
+div.colors-box div.colors-board div.Brown {
+  background-color: #725130;
+}
+
+div.colors-box div.colors-board div.Yellow {
+  background-color: #b59f3b;
+}
+
+div.colors-box div.colors-board div.Black {
+  background-color: blueviolet;
+}
